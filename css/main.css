@@ -19,6 +19,10 @@ h6 { font-size: .75em; }
 strong{
     color: #A10B0B;
 }
+video {
+    width: 100%;
+    height: auto;
+  }
 .fas{
     color: #A10B0B;
 }
@@ -29,7 +33,7 @@ header{
 }
 .heading-img{
     height: 500px;
-    background: url("/assets/croppedclean.png");
+    background: url("../assets/croppedclean.png");
     background-repeat: no-repeat;
     background-position: right center;
     background-size: contain;
@@ -223,6 +227,76 @@ header{
     display: block;
     padding: .5em;
 }
+/* Video Section */
+body.vp-center {
+    height: 82% !important;
+}
+.video{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    height: 500px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.video-frame{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+.vid h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 2em;
+    margin-bottom: -1.5em;
+}
+.bg-2-overlay{
+    height: 100%;
+    width: 100%;
+    background: #FFF3F3;
+    opacity: .9;
+}
+.bg-2{
+    height: 100%;
+    width: 100%;
+    background: url("../assets/background2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.bg-2 h3{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 2em;
+}
+.bg-2 p{
+    font-size: 1em;
+    text-align: center;
+}
+.last-cta-button{
+    padding-bottom: 4em;
+}
+.last-cta-button a{
+    background: #A10B0B;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 3px;
+    display: block;
+    padding: .5em;
+    margin: 0 auto;
+    width: 40%;
+}
 /* Footer section */
 footer{
     background: #131313;
@@ -257,5 +331,22 @@ footer{
     }
     .second-cta{
         display: block;
+    }
+    .last-cta-button{
+        padding-bottom: 1em;
+    }
+    .last-cta-button a{
+        background: #A10B0B;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-size: 2em;
+        font-weight: 700;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 3px;
+        display: block;
+        padding: .5em;
+        margin: 0 auto;
+        width: 60%;
     }
 }
